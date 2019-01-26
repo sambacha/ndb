@@ -1,5 +1,5 @@
 {
-  "name": "@pp/ndb",
+  "name": "@xo/ndb",
   "version": "1.0.42",
   "description": "Chrome DevTools for Node.js",
   "main": "ndb.js",

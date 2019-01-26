@@ -52,6 +52,9 @@ class ReleaseBuilder {
   }
 
   async _copyFile(source, destination) {
+    if (!destination || !source) {
+      return Promise.resolve();
+    }
     if (fs.copyFile)
       await util.promisify(fs.copyFile)(source, destination);
     else
@@ -286,7 +289,7 @@ class ReleaseBuilder {
       if (fs.existsSync(fullName))
         return fullName;
     }
-    throw new Error(`File ${name} not found`);
+    // throw new Error(`File ${name} not found`);
   }
 }
 
