@@ -1,25 +1,34 @@
 Arguments: 
-  /usr/local/Cellar/node/10.5.0_1/bin/node /usr/local/bin/yarn add node-fetch
+  /usr/local/Cellar/node/11.6.0/bin/node /usr/local/bin/yarn publish
 
 PATH: 
-  /usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/khoangtrieu/.rvm/bin:/Users/khoangtrieu/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/Users/khoangtrieu/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/heroku:/Users/khoangtrieu/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip:/Users/khoangtrieu/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/lein:/Users/khoangtrieu/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found:/Users/khoangtrieu/.antigen/bundles/mafredri/zsh-async:/Users/khoangtrieu/.antigen/bundles/sindresorhus/pure:/Users/khoangtrieu/.antigen/bundles/zsh-users/zsh-autosuggestions:/Users/khoangtrieu/.antigen/bundles/zsh-users/zsh-syntax-highlighting:/Users/khoangtrieu/opensource/depot_tools:/Users/khoangtrieu/.fzf/bin:/Users/khoangtrieu/opensource/depot_tools
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/khoangtrieu/.fzf/bin:/Users/khoangtrieu/.rvm/bin:/Users/khoangtrieu/Library/Python/2.7/bin:/Users/khoangtrieu/.rvm/bin:/Users/khoangtrieu/Library/Python/2.7/bin
 
 Yarn version: 
   1.12.3
 
 Node version: 
-  10.5.0
+  11.6.0
 
 Platform: 
   darwin x64
 
 Trace: 
-  Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:443
-      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:50:26)
+  Error: canceled
+      at Interface.<anonymous> (/Users/khoangtrieu/.config/yarn/global/node_modules/yarn/lib/cli.js:125278:13)
+      at Interface.emit (events.js:188:13)
+      at Interface._ttyWrite (readline.js:799:16)
+      at ReadStream.onkeypress (readline.js:184:10)
+      at ReadStream.emit (events.js:188:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1071:36)
+      at ReadStream.emit (events.js:188:13)
+      at addChunk (_stream_readable.js:288:12)
 
 npm manifest: 
   {
-    "name": "ndb",
+    "name": "@xo/ndb",
     "version": "1.0.42",
     "description": "Chrome DevTools for Node.js",
     "main": "ndb.js",
@@ -47,6 +56,7 @@ npm manifest:
       "chokidar": "^2.0.4",
       "isbinaryfile": "^3.0.3",
       "mime": "^2.3.1",
+      "node-fetch": "^2.3.0",
       "opn": "^5.3.0",
       "update-notifier": "^2.5.0",
       "which": "^1.3.1",
@@ -57,7 +67,7 @@ npm manifest:
       "ndb-node-pty-prebuilt": "^0.8.0"
     },
     "devDependencies": {
-      "chrome-devtools-frontend": "1.0.612830",
+      "chrome-devtools-frontend": "^1.0.619856",
       "eslint": "^5.9.0",
       "mocha": "^5.2.0",
       "rimraf": "^2.6.2",
@@ -427,10 +437,10 @@ Lockfile:
     resolved "https://npm.paypal.com/repository/npm-all/chownr/-/chownr-1.1.1.tgz#54726b8b8fff4df053c42187e801fb4412df1494"
     integrity sha512-j38EvO5+LHX84jlo6h4UzmOwi0UgW61WRyPtJz4qaadK5eY3BTS5TY/S1Stc3Uk2lIM6TPevAlULiEJwie860g==
   
-  chrome-devtools-frontend@1.0.612830:
-    version "1.0.612830"
-    resolved "https://npm.paypal.com/repository/npm-all/chrome-devtools-frontend/-/chrome-devtools-frontend-1.0.612830.tgz#9748e2c03fd50e69456348e69ea36dd720d1ab54"
-    integrity sha512-nURfzpfUOVNwE3URbi3SU33mWybMeDE7Zr6dHeFPcil2BpYtszrRo6Zqmp3t/BDrBUg2dAiy7X79cRkymxv8iA==
+  chrome-devtools-frontend@^1.0.619856:
+    version "1.0.626211"
+    resolved "https://npm.paypal.com/repository/npm-all/chrome-devtools-frontend/-/chrome-devtools-frontend-1.0.626211.tgz#9ec505c799941b2e101e53356d0de1f8a30cd8b4"
+    integrity sha512-UbtsPWafxiQ9/pJMXX2PrRIrhlx+XJrpWvHY8/ugxFwlhNsuRdPzZok1PRjkHlh0E7efVZ6xxtZR5h0uZLHWJg==
   
   ci-info@^1.5.0:
     version "1.6.0"
@@ -1776,6 +1786,11 @@ Lockfile:
     version "1.0.5"
     resolved "https://npm.paypal.com/repository/npm-all/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
     integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
+  
+  node-fetch@^2.3.0:
+    version "2.3.0"
+    resolved "https://npm.paypal.com/repository/npm-all/node-fetch/-/node-fetch-2.3.0.tgz#1a1d940bbfb916a1d3e0219f037e89e71f8c5fa5"
+    integrity sha512-MOd8pV3fxENbryESLgVIeaGKrdl+uaYhCSSVkjeOb/31/njTpcis5aWfdqgNlHIrKOLRbMnfPINPOML2CIFeXA==
   
   node-pre-gyp@^0.10.0:
     version "0.10.3"

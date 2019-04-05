@@ -153,7 +153,7 @@ class NddService {
     const pathToHttpPatch = path.resolve(__dirname, '..', './lib/preload/ndb/httpMonkeyPatching.js');
 
     const env = {
-      NODE_OPTIONS: `--require ndb/preload.js --require ${pathToHttpPatch}`,
+      NODE_OPTIONS: `--require ndb/preload.js --require ${pathToHttpPatch} --stack-trace-limit=30`,
       NODE_PATH: nodePath,
       NDD_STORE: this._nddStores[0],
       NDD_WAIT_FOR_CONNECTION: 1,
