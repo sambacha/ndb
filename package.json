@@ -20,6 +20,9 @@
   "author": "The Chromium Authors",
   "license": "Apache-2.0",
   "dependencies": {
+    "@types/chrome": "^0.0.163",
+    "@types/node": "^14.17.33",
+    "@types/verror": "^1.10.5",
     "carlo": "^0.9.46",
     "chokidar": "3.5.2",
     "debug": "^4.3.2",
@@ -27,6 +30,7 @@
     "mime": "^2.4.4",
     "opn": "^5.5.0",
     "update-notifier": "^2.5.0",
+    "verror": "^1.10.1",
     "which": "2.0.1",
     "ws": "^6.2.1",
     "xterm": "^3.14.5"
@@ -35,7 +39,7 @@
     "node-pty": "^0.10.1"
   },
   "devDependencies": {
-    "chrome-devtools-frontend": "1.0.827632",
+    "chrome-devtools-frontend": "1.0.672485",
     "eslint": "^5.16.0",
     "mocha": "^5.2.0",
     "rimraf": "^2.6.3",
